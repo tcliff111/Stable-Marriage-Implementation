@@ -105,7 +105,6 @@ function propose(male) {
                 break;
 
             }
-
          }
 
          if(onlist==true) {
@@ -119,7 +118,6 @@ function propose(male) {
             }
          
              else {
-    
                 var pref_is_before=false;
                 for(j=0;j<females_Map.get(male.preferences[i]).preferences.length;j++) {
                     if(females_Map.get(male.preferences[i]).preferences[j]==male.id) {
@@ -144,7 +142,7 @@ function propose(male) {
             }
          }
          if(male.matched==true) break;
-
+         
         }
 
     if(male.matched==false) male.done=true;
@@ -153,18 +151,15 @@ function propose(male) {
 
 stableMarriage(males_Map);
 
-document.write("Male1 Match: "+males_Map.get("1").currentMatch);
+document.write("Male1 Match: " + males_Map.get("1").currentMatch+"<br />");
 
-document.write(" Male2 Match: "+males_Map.get("2").currentMatch);
+document.write(" Male2 Match: " + males_Map.get("2").currentMatch+"<br />");
 
-document.write(" Male3 Match: "+males_Map.get("3").currentMatch);
+document.write(" Male3 Match: " + males_Map.get("3").currentMatch+"<br />");
 
+document.write(" Female1 Match: " + females_Map.get("F1").currentMatch+"<br />");
 
-//document.write("Male3 Match: "+males_Map.get("3").currentMatch);
-
-document.write(" Female1 Match: "+females_Map.get("F1").currentMatch);
-
-document.write(" Female2 Match: "+females_Map.get("F2").currentMatch);
+document.write(" Female2 Match: " + females_Map.get("F2").currentMatch+"<br />");
 
 
 
