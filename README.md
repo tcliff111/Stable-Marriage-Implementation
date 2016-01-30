@@ -1,2 +1,2 @@
 # Stable-Marriage-Implementation
-Implementation of the stable marriage algorithm that I made last year
+Implementation of the stable marriage algorithm that I made last year.  This implementation does not require there to be an equal number of males and females.  Additionally, males and females are not required to put everyone of the opposite sex on their preference list, only the people they desire.  Thus, it is not necesarily true that everyone will be matched.  However, the matches are still stable.
